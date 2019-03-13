@@ -5,12 +5,46 @@
 import React, { Component } from 'react'
 
 export class testTwo extends Component {
+
+  state = {
+    display: "none",
+    isClicked: true,
+  }
+
+  handleButtonClick = (e) => {
+    e.preventDefault();
+    if (!this.isClicked) {
+        this.setState({
+          display: "block",
+          isClicked: "true",
+        });
+    } 
+  }
+  handleButtonClose = (e) => {
+    e.preventDefault();
+    if (!this.isClicked) {
+      this.setState({
+        display: "none",
+        isClicked: "false",
+      });
+  } 
+  }
   render() {
     return (
       <div>
+{/* this is the modal */}
+        <div id="modal-parent" style={{ display: this.state.display }}>
+          <h1 id="modal-child">This button and modal lives on testTwo.js</h1>
+          <button id="modal-close" style={{ display: this.state.display}} 
+            onClick={this.handleButtonClose}>Close!
+          </button>
+        </div>
+{/* this is the static text */}
         <div className="parent-testTwo">
-            <h1 id="h1-testTwo">This is testTwo h1</h1>
-            <span>X</span>
+            <h1 id="h1-testTwo">testTwo.js Component</h1>
+            <button id="ex-btn" 
+              onClick={this.handleButtonClick}>Example Button
+            </button>
         </div>
       </div>
     )

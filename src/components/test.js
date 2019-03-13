@@ -9,10 +9,11 @@ import React, { Component } from 'react'
 export class test extends Component {
   render() {
     return (
-      <div>
+      <div className="body-box">
+        <p id="comp-identifier">test.js component</p>
         <h1 id="header">Hello Teanage America!</h1>
-        <p>My name is Miss Anabella and I'm here to teach you German for dummies.</p>
-        <p>Baa, bee, boo, baa, boo!</p>
+        <p>My name is Miss Anabella and I'm here to teach you Sass for dummies.</p>
+        <p id="p-specific">Baa, bee, boo, baa, boo!</p>
       </div>
     )
   }
