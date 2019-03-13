@@ -1,0 +1,13 @@
+// All global app colors can live here. They are imported to each individual scss file to be used at will. This is for ease of orginization.
+
+$colors: (
+    primary: pink,
+    primary-light: lighten(pink, 40%),
+    primary-dark: darken(pink, 40%),
+    accent: #fff6bb,
+    background: #fff,
+    buttons: red,
+);
+
+
+// Note, other general/global styles can be stored here as well. The file name will need to reflect a global nature. Also, there will need to be a map function associated with each variable object. But, it is a nice way to store style variables as you scale.

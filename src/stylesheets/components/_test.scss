@@ -1,0 +1,18 @@
+// This scss file is associatied witht eh test.js component. All styles in this section should be relative to this component only.
+
+// Imports the global colors
+@import './_colors.scss';
+
+// Function that maps throught the global color object to make the color designation simpler below.
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+// Component styles start here. Note, the body element is only there as an example of how to nest using scss
+body {
+    background: pink;
+// be as specific as possible when styling elemets.  The below uses tag and the id. This will avoide shadowing.
+    h1#header {
+    color: color(accent)
+    }
+}
