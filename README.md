@@ -1,3 +1,32 @@
+# React-Sass-Boiler
+
+### Why?
+
+This was created as a template for starting a new app that uses Sass/scss compilers for CSS styling. The Sass dependencies are already there, you just need to run yarn install or npm install to get it working. Then yarn start and have at it!
+
+I has example components .js files and example .scss files which associate with them. There are also use cases and button function examples for changing css through state as well.
+
+Folder/File structure is based on the 7-1 system. If you are not familiar with it, google it. It's very handy...
+
+Good Luck!<br>
+-Zac *(Creator)*
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+# Info From React:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
